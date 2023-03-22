@@ -76,7 +76,7 @@ arr1.reverse();
 // using
 let output = [];
 // for (let num of myArr) {
-  // output.push(num * 2);
+// output.push(num * 2);
 // }
 
 // myArr.forEach((num) => {
@@ -85,14 +85,20 @@ let output = [];
 
 // output = [2, 6, 12, 20, 30, 54, 77]
 // for (let i = 0; i < myArr.length; i++) {
-  // output.push(myArr[i] * (i + 1));
+// output.push(myArr[i] * (i + 1));
 // }
 
 // 1. map()
+
+function multiplyBy2(num) {
+  return 2 * num;
+}
+
 let myArr = [2, 3, 4, 5, 6, 9, 11];
-output = myArr.map((num) => {
-  const val = num * 2;
-  return val;
+output = myArr.map(function multiplyBy2(num) {
+  return 2 * num;
 });
+
+// console.log(multiplyBy2(6))
 
 console.log('myArr', myArr, 'output', output);
